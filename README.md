@@ -9,3 +9,11 @@ This is basic Amazon-like CLI (Command Line Interface) application for customers
 - Node.js
 - Inquirer (NPM)
 
+
+
+
+
+------
+
+Copyright © 2018 Allan Jones
+
