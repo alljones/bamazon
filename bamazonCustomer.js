@@ -16,6 +16,11 @@ var connection = mysql.createConnection({
   user: "root",
 
   // Your password
-  password: "",
+  password: "Babetoba0916!",
   database: "bamazon"
+});
+
+connection.connect(function(err) {
+  if (err) throw err;
+  displayItems();
 });
