@@ -17,12 +17,13 @@ var connection = mysql.createConnection({
   user: "root",
 
   // Your password
-  password: "Babetoba0916!", //Enter PW
+  password: "", //Enter PW
   database: "bamazon"
 });
 
 connection.connect(function(err) {
   if (err) throw err;
+  console.log("~ ~ ~ ~ ~ WELCOME TO BAMAZON  ~ ~ ~ ~ ~ ");
   displayItems();
 });
 
@@ -39,10 +40,11 @@ function displayItems() {
       t.cell("Price, USD", product.price, Table.number(2));
       t.newRow();
     });
-
     console.log(t.toString());
   });
 }
+
+askId();
 // Ask Customer Product ID
 function askId() {
   inquirer
