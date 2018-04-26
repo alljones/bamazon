@@ -1,7 +1,7 @@
 {
   "name": "bamazon",
   "version": "1.0.0",
-  "description": "Product Inventory",
+  "description": "Online Inventory Storefront",
   "main": "bamazonCustomer.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/alljones/bamazon#readme",
   "dependencies": {
+    "easy-table": "^1.1.1",
     "inquirer": "^5.2.0",
     "mysql": "^2.15.0"
   }
