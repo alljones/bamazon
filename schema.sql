@@ -28,5 +28,6 @@ CREATE TABLE products
     ('Bob Marley Short Sleeve Tee', 'Men', 12.99, 8),
     ('Cassandra Modern Fabric Queen-Bed', 'Home', 193.59, 3),
     ('Holmes Visipure Tower Air Purifier', 'Home', 69.99, 27);
+  
   SELECT *
   FROM products;

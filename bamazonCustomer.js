@@ -54,7 +54,7 @@ function displayInventory() {
 }
 
 // = = = = = = = = = = = = = = = = =
-//Ask Product Id - Customer 
+//Ask Product Id - Customer
 // = = = = = = = = = = = = = = = = =
 
 function askId() {
@@ -82,11 +82,11 @@ function askId() {
         }
       });
     });
-    askQty();
+  askQty();
 }
 
-/ = = = = = = = = = = = = = = = = =
-//Ask Product Id - Customer 
+// = = = = = = = = = = = = = = = = =
+//Ask Product Qty - Customer
 // = = = = = = = = = = = = = = = = =
 
 function askQty() {
@@ -101,7 +101,10 @@ function askQty() {
     ])
     .then(function(answer) {
       var query = "SELECT * FROM products WHERE ?";
-      connection.query(query, { stock_qty: answer.stock_qty }, function(err, res) {
+      connection.query(query, { stock_qty: answer.stock_qty }, function(
+        err,
+        res
+      ) {
         for (var i = 0; i < res.length; i++) {
           console.log(
             "Item ID: " +
@@ -114,6 +117,5 @@ function askQty() {
         }
       });
     });
-    askQty();
+  askQty();
 }
-
